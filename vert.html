@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="swiper-bundle.min.css">
+
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-image: url("pict/background.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+
+
+    .swiper-slide img {
+      max-width: 98%;
+      max-height: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    .swiper-container {
+      height: 100%;
+      width: auto;
+      --swiper-pagination-color: #f10808;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="pict/1.jpg"></div>
+      <div class="swiper-slide"><img src="pict/2.jpg"></div>
+      <div class="swiper-slide"><img src="pict/3.jpg"></div>
+      <div class="swiper-slide"><img src="pict/4.jpg"></div>
+      <div class="swiper-slide"><img src="pict/5.jpg"></div>
+      <div class="swiper-slide"><img src="pict/6.jpg"></div>
+      <div class="swiper-slide"><img src="pict/7.jpg"></div>
+      <div class="swiper-slide"><img src="pict/8.jpg"></div>
+      <div class="swiper-slide"><img src="pict/9.jpg"></div>
+      <div class="swiper-slide"><img src="pict/10.jpg"></div>
+      <div class="swiper-slide"><img src="pict/11.jpg"></div>
+      <div class="swiper-slide"><img src="pict/12.jpg"></div>
+      <div class="swiper-slide"><img src="pict/13.jpg"></div>
+      <div class="swiper-slide"><img src="pict/14.jpg"></div>
+      <div class="swiper-slide"><img src="pict/15.jpg"></div>
+      <div class="swiper-slide"><img src="pict/16.jpg"></div>
+      <div class="swiper-slide"><img src="pict/17.jpg"></div>
+      <div class="swiper-slide"><img src="pict/18.jpg"></div>
+      <div class="swiper-slide"><img src="pict/19.jpg"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="swiper-bundle.min.js"></script>
+
+  <!-- Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      direction: 'vertical',
+      effect: 'coverflow',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 10,
+        depth: 400,
+        modifier: 3,
+        slideShadows: false
+      },
+    });
+  </script>
+</body>
+
+</html>
